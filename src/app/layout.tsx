@@ -1,7 +1,7 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'Prsimoney',
+  title: 'Parsimoney',
   description: 'Another personal finance app',
 }
 
