@@ -1,0 +1,45 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        md: {
+          l: {
+            primary: "#536600",
+            "on-primary": "#FFFFFF",
+            "primary-container": "#CCF139",
+            "on-primary-container": "#171E00",
+            secondary: "#5C6146",
+            "on-secondary": "#FFFFFF",
+            "secondary-container": "#E0E6C3",
+            "on-secondary-container": "#191D08",
+            tertiary: "#3A665D",
+            "on-tertiary": "#FFFFFF",
+            "tertiary-container": "#BDECE1",
+            "on-tertiary-container": "#00201B",
+            error: "#BA1A1A",
+            "on-error": "#FFFFFF",
+            "error-container": "#FFDAD6",
+            "on-error-container": "#410002",
+            outline: "#77786A",
+            background: "#FEFCF4",
+            "on-background": "#1B1C17",
+            surface: "#FEFCF4",
+            "on-surface": "#1B1C17",
+            "surface-variant": "#E3E4D3",
+            "on-surface-variant": "#46483C",
+            "inverse-surface": "#30312B",
+            "inverse-on-surface": "#F3F1E8",
+            "inverse-primary": "#B1D413",
+            shadow: "#000000",
+            "surface-tint": "#536600",
+            "outline-variant": "#C7C8B8",
+            scrim: "#000000",
+          },
+        },
+      },
+    },
+  },
+  plugins: [],
+};
