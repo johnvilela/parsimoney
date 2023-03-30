@@ -13,22 +13,21 @@
 }
 
 @layer base {
-
-  input:not([type='radio']):focus~label,
-  textarea:focus~label,
-  select:focus~label {
+  input:not([type='radio']):focus ~ label,
+  textarea:focus ~ label,
+  select:focus ~ label {
     @apply bg-white px-1 text-cyan-800;
   }
 
-  input:not([type='radio']):not(:focus):not(:placeholder-shown)~label,
-  textarea:not(:focus):not(:placeholder-shown)~label,
-  select:not(:focus):not(:placeholder-shown)~label {
+  input:not([type='radio']):not(:focus):not(:placeholder-shown) ~ label,
+  textarea:not(:focus):not(:placeholder-shown) ~ label,
+  select:not(:focus):not(:placeholder-shown) ~ label {
     @apply bg-white px-1 text-stone-600;
   }
 
-  input:not([type='radio']):not(:focus):placeholder-shown~label,
-  textarea:not(:focus):placeholder-shown~label,
-  select:not(:focus):placeholder-shown~label {
+  input:not([type='radio']):not(:focus):placeholder-shown ~ label,
+  textarea:not(:focus):placeholder-shown ~ label,
+  select:not(:focus):placeholder-shown ~ label {
     @apply duration-200 origin-left ease-in-out transform scale-100 translate-x-0 translate-y-0 text-stone-600;
   }
 

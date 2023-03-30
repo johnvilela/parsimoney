@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import React, { forwardRef, InputHTMLAttributes } from "react";
-import { IconBaseProps } from "react-icons";
-import { MdErrorOutline } from "react-icons/md";
+import React, { forwardRef, InputHTMLAttributes } from 'react';
+import { IconBaseProps } from 'react-icons';
+import { MdErrorOutline } from 'react-icons/md';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   id: string;
@@ -14,8 +14,8 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 
 const Textfield = forwardRef<HTMLInputElement, InputProps>(
   ({ id, label, hint, icon: Icon, error, ...rest }, ref) => {
-    const hasErrorStyle = error ? "border-red-800" : "border-stone-700";
-    const hasIconStyle = Icon ? "has-icon-animation" : "has-not-icon-animation";
+    const hasErrorStyle = error ? 'border-red-800' : 'border-stone-700';
+    const hasIconStyle = Icon ? 'has-icon-animation' : 'has-not-icon-animation';
 
     return (
       <div className="w-full mb-3">
@@ -61,8 +61,8 @@ const Textfield = forwardRef<HTMLInputElement, InputProps>(
         )}
       </div>
     );
-  }
+  },
 );
-Textfield.displayName = "Textfield";
+Textfield.displayName = 'Textfield';
 
 export { Textfield };

@@ -1,27 +1,27 @@
-"use client";
+'use client';
 
-import { ButtonHTMLAttributes, ReactNode } from "react";
-import { CgSpinner } from "react-icons/cg";
+import { ButtonHTMLAttributes, ReactNode } from 'react';
+import { CgSpinner } from 'react-icons/cg';
 
 interface IButton extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
   isLoading?: boolean;
-  variant?: "primary" | "primary-border";
+  variant?: 'primary' | 'primary-border';
   aditionalClasses?: string;
 }
 
 const style = {
-  primary: "bg-cyan-800 border-cyan-800 text-white",
-  "primary-border": "bg-transparent border-cyan-800 text-cyan-800",
+  primary: 'bg-cyan-800 border-cyan-800 text-white',
+  'primary-border': 'bg-transparent border-cyan-800 text-cyan-800',
 };
 
 const disabledButton =
-  "disabled:hover:brightness-100 disabled:cursor-auto disabled:bg-gray-400 disabled:border-gray-400";
+  'disabled:hover:brightness-100 disabled:cursor-auto disabled:bg-gray-400 disabled:border-gray-400';
 
 export function Button({
   isLoading,
   children,
-  variant = "primary",
+  variant = 'primary',
   aditionalClasses,
   ...rest
 }: IButton) {
