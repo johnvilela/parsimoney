@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@supabase/auth-helpers-nextjs": "^0.5.6",
     "@supabase/supabase-js": "^2.12.1",
     "@types/node": "18.15.11",
     "@types/react": "18.0.31",
@@ -26,6 +27,7 @@
     "eslint-config-prettier": "^8.8.0",
     "postcss": "^8.4.21",
     "prettier": "2.8.7",
+    "supabase": "^1.46.4",
     "tailwindcss": "^3.3.0"
   }
 }

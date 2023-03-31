@@ -1,4 +1,7 @@
 import { LayoutProps } from '@/types/layout';
+import SupabaseProvider from '../components/supabase-provider';
+
+export const revalidate = 0;
 
 function AuthLayout({ children }: LayoutProps) {
   return (
@@ -7,7 +10,9 @@ function AuthLayout({ children }: LayoutProps) {
         PARSIMONEY
       </h1>
       <div className="drop-shadow shadow-[0_15px_2rem] shadow-sky-100 max-w-md bg-white w-full p-8 rounded-md border border-stone-200">
-        {children}
+        <SupabaseProvider session={null}>
+          {children}
+        </SupabaseProvider>
       </div>
     </main>
   );
