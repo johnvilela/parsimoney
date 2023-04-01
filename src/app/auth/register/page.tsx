@@ -50,7 +50,10 @@ function Register() {
       return console.log({ error });
     }
 
-    router.push('/auth/register/success');
+    // TODO: enable this after email verification is implemented
+    // router.push('/auth/register/success');
+
+    router.push('/app/dashboard');
   };
 
 
