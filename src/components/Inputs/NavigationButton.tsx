@@ -2,9 +2,9 @@ import Link from 'next/link';
 import { ReactNode } from 'react';
 
 const style = {
-  primary: 'bg-md-l-primary border-md-l-primary text-md-l-on-primary',
-  'primary-border': 'bg-md-l-surface border-md-l-outline text-md-l-primary',
-  error: 'bg-md-l-error border-md-l-error text-md-l-on-error',
+  primary: 'bg-cyan-800 border-cyan-800 text-white',
+  'primary-border': 'bg-transparent border-cyan-800 text-cyan-800',
+  error: 'bg-error-800 border-error-800 text-white',
 };
 
 interface NavigationButtonProps {
